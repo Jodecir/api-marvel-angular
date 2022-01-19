@@ -17,6 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { CharactersComponent } from './characters/characters.component';
 import { CharacterComponent } from './characters/character/character.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ComicComponent } from './comics/comic/comic.component';
+import { ComicsComponent } from './comics/comics.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     AppComponent,
     NavbarComponent,
     CharacterComponent,
-    CharactersComponent
+    CharactersComponent,
+    ComicComponent,
+    ComicsComponent
   ],
   imports: [
     BrowserModule,

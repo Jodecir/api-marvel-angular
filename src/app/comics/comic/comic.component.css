@@ -1,0 +1,9 @@
+img.mat-card-image {
+  min-height: 280px;
+  max-height: 280px;
+}
+
+h2.mat-card-title {
+  text-align: center;
+  height:30px;
+}

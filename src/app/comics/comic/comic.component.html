@@ -1,0 +1,15 @@
+<mat-card>
+  <a href="{{comic.urls[0].url}}" target="blank">
+    <img mat-card-image src={{comic.thumbnail.path}}.{{comic.thumbnail.extension}} alt="{{comic.name}}">
+  </a>
+  <mat-card-title>
+    <h2 mat-card-title>{{ comic.title }}</h2>
+  </mat-card-title>
+</mat-card>
+<mat-card>
+  <a href="{{comic.urls[0].url}}" target="blank" fxFlex mat-flat-button color="accent">
+    Detalhes
+  </a>
+</mat-card>
+<mat-card-footer>
+</mat-card-footer>
