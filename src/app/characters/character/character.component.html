@@ -1,9 +1,9 @@
 <mat-card>
-  <img mat-card-image src={{character.thumbnail.path}}.{{character.thumbnail.extension}} alt="{{character.name}}">
+  <a href="{{character.urls[0].url}}" target="blank">
+    <img mat-card-image src={{character.thumbnail.path}}.{{character.thumbnail.extension}} alt="{{character.name}}">
+  </a>
   <mat-card-title>
-    <a href="{{character.urls[0].url}}" target="blank" style="text-decoration: none">
-      {{ character.name }}
-    </a>
+    {{ character.name }}
   </mat-card-title>
 </mat-card>
 <mat-card>
