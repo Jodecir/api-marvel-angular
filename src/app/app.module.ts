@@ -19,6 +19,7 @@ import { CharacterComponent } from './characters/character/character.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ComicComponent } from './comics/comic/comic.component';
 import { ComicsComponent } from './comics/comics.component';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ComicsComponent } from './comics/comics.component';
     CharacterComponent,
     CharactersComponent,
     ComicComponent,
-    ComicsComponent
+    ComicsComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
