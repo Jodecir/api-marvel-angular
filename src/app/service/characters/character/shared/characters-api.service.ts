@@ -7,9 +7,9 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class CharactersApiService {
-  TS = ""
+  TS = "2021"
   PUBLIC_KEY = '5a237863b3cc2061003cbbc4fe20dc06';
-  HASH = '';
+  HASH = '04bc75e5de9e0c176cb73442c4ba0328';
   URL_API = `https://gateway.marvel.com:443/v1/public/characters?ts=${this.TS}&apikey=${this.PUBLIC_KEY}&hash=${this.HASH}`;
 
   constructor(private http: HttpClient) { }
