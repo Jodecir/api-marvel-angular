@@ -1,1 +1,8 @@
-<p>characters works!</p>
+<p *ngFor="let character of allCharacters">
+  {{ character.id }}
+  {{character.name}}
+  {{ character.description }}
+  <a href="{{character.urls[0].url}}" target="blank"fxFlex mat-flat-button color="primary">
+    Detalhes
+  </a>
+</p>
