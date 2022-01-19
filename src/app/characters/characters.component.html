@@ -1,19 +1,7 @@
 <div fxFlex fxLayout="column">
   <div fxLayout="row wrap">
     <div class="FlexCard" fxFlex="25" fxFlex.xs="100" fxFlex.md="50" fxFle.sm="50" *ngFor="let character of allCharacters">
-      <mat-card>
-        <img mat-card-image src={{character.thumbnail.path}}.{{character.thumbnail.extension}} alt="{{character.name}}">
-        <mat-card-title>
-          {{ character.name }}
-        </mat-card-title>
-      </mat-card>
-      <mat-card>
-        <a href="{{character.urls[0].url}}" target="blank" fxFlex mat-flat-button color="primary">
-          Detalhes
-        </a>
-      </mat-card>
-      <mat-card-footer>
-      </mat-card-footer>
+        <app-character [character]="character"></app-character>
     </div>
   </div>
 </div>
