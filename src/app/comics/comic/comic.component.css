@@ -3,6 +3,10 @@ img.mat-card-image {
   max-height: 280px;
 }
 
+img.mat-card-image:hover {
+  border-radius: 25px
+}
+
 h2.mat-card-title {
   text-align: center;
   height:30px;
