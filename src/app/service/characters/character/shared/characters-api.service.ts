@@ -19,4 +19,16 @@ export class CharactersApiService {
     return this.http.get<any>(this.URL_API)
     .pipe(map((data: any) => data.data.results))
   }
+
+  getCharacterDetail(id: string): Observable<any> {
+    return this.http.get<any>(`${this.WEBSITE}/${id}?ts=${this.TS}&apikey=${this.PUBLIC_KEY}&hash=${this.HASH}`);
+  }
+
+  getCharacterComics(id: string): Observable<any> {
+    return this.http.get<any>(`${this.WEBSITE}/${id}/comics?ts=${this.TS}&apikey=${this.PUBLIC_KEY}&hash=${this.HASH}`);
+  }
+
+  searchCharacters(name: string) {
+    return this.http.get<any[]>(`${this.URL_API}&nameStartsWith=${name}`);
+  }
 }
