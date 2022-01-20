@@ -7,11 +7,12 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class CharactersApiService {
-  WEBSITE = 'https://gateway.marvel.com:443/v1/public/characters'
+  WEBSITE = 'https://gateway.marvel.com:443/v1/public'
+  SECTION = 'characters'
   TS = "2021"
   PUBLIC_KEY = '5a237863b3cc2061003cbbc4fe20dc06';
   HASH = '04bc75e5de9e0c176cb73442c4ba0328';
-  URL_API = `${this.WEBSITE}?ts=${this.TS}&apikey=${this.PUBLIC_KEY}&hash=${this.HASH}`;
+  URL_API = `${this.WEBSITE}/${this.SECTION}?ts=${this.TS}&apikey=${this.PUBLIC_KEY}&hash=${this.HASH}`;
 
   constructor(private http: HttpClient) { }
 
@@ -21,11 +22,11 @@ export class CharactersApiService {
   }
 
   getCharacterDetail(id: string): Observable<any> {
-    return this.http.get<any>(`${this.WEBSITE}/${id}?ts=${this.TS}&apikey=${this.PUBLIC_KEY}&hash=${this.HASH}`);
+    return this.http.get<any>(`${this.WEBSITE}/${this.SECTION}/${id}?ts=${this.TS}&apikey=${this.PUBLIC_KEY}&hash=${this.HASH}`);
   }
 
   getCharacterComics(id: string): Observable<any> {
-    return this.http.get<any>(`${this.WEBSITE}/${id}/comics?ts=${this.TS}&apikey=${this.PUBLIC_KEY}&hash=${this.HASH}`);
+    return this.http.get<any>(`${this.WEBSITE}/${this.SECTION}/${id}/comics?ts=${this.TS}&apikey=${this.PUBLIC_KEY}&hash=${this.HASH}`);
   }
 
   searchCharacters(name: string) {
