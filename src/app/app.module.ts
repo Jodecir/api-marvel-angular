@@ -15,7 +15,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { HttpClientModule } from '@angular/common/http';
 import { CharactersListComponent } from './characters/characters-list/characters-list.component';
-import { CharacterComponent } from './characters/character/character.component';
+import { CharacterComponent } from './characters/character-card/character-card.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ComicComponent } from './comics/comic/comic.component';
 import { ComicsComponent } from './comics/comics.component';

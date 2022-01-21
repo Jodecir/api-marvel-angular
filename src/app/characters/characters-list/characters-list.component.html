@@ -2,7 +2,7 @@
   <app-search></app-search>
   <div fxLayout="row wrap">
     <div class="FlexCard" fxFlex="25" fxFlex.xs="100" fxFlex.md="25" fxFle.sm="50" *ngFor="let character of allCharacters">
-        <app-character [character]="character"></app-character>
+        <app-character-card [character]="character"></app-character-card>
     </div>
   </div>
 </div>
