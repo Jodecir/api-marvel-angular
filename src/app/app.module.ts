@@ -18,7 +18,7 @@ import { CharactersListComponent } from './characters/characters-list/characters
 import { CharacterComponent } from './characters/character-card/character-card.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ComicComponent } from './comics/comic/comic.component';
-import { ComicsComponent } from './comics/comics.component';
+import { ComicsListComponent } from './comics/comics-list/comics-list.component';
 import { SearchComponent } from './search/search.component';
 
 
@@ -29,7 +29,7 @@ import { SearchComponent } from './search/search.component';
     CharacterComponent,
     CharactersListComponent,
     ComicComponent,
-    ComicsComponent,
+    ComicsListComponent,
     SearchComponent
   ],
   imports: [

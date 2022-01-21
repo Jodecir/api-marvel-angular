@@ -3,11 +3,11 @@ import { Observable } from 'rxjs';
 import { ComicsApiService } from 'src/app/services/comics/comic/shared/comics-api.service';
 
 @Component({
-  selector: 'app-comics',
-  templateUrl: './comics.component.html',
-  styleUrls: ['./comics.component.css']
+  selector: 'app-comics-list',
+  templateUrl: './comics-list.component.html',
+  styleUrls: ['./comics-list.component.css']
 })
-export class ComicsComponent implements OnInit {
+export class ComicsListComponent implements OnInit {
 
   constructor(private comicSvc: ComicsApiService) { }
   public allComics: any;
