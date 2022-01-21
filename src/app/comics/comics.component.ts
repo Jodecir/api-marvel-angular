@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ComicsApiService } from 'src/app/service/comics/comic/shared/comics-api.service';
+import { ComicsApiService } from 'src/app/services/comics/comic/shared/comics-api.service';
 
 @Component({
   selector: 'app-comics',

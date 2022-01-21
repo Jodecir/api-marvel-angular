@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { CharactersApiService } from 'src/app/service/characters/character/shared/characters-api.service';
+import { CharactersApiService } from 'src/app/services/characters/character/shared/characters-api.service';
 
 @Component({
   selector: 'app-characters',
