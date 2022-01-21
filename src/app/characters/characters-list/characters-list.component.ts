@@ -3,11 +3,11 @@ import { Observable } from 'rxjs';
 import { CharactersApiService } from 'src/app/services/characters/character/shared/characters-api.service';
 
 @Component({
-  selector: 'app-characters',
-  templateUrl: './characters.component.html',
-  styleUrls: ['./characters.component.css']
+  selector: 'app-characters-list',
+  templateUrl: './characters-list.component.html',
+  styleUrls: ['./characters-list.component.css']
 })
-export class CharactersComponent implements OnInit {
+export class CharactersListComponent implements OnInit {
 
   constructor(private characterSvc: CharactersApiService) { }
   public allCharacters: any;
