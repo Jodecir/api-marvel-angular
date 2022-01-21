@@ -1,9 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-comic',
-  templateUrl: './comic.component.html',
-  styleUrls: ['./comic.component.css']
+  selector: 'app-comic-card',
+  templateUrl: './comic-card.component.html',
+  styleUrls: ['./comic-card.component.css']
 })
 export class ComicComponent implements OnInit {
   

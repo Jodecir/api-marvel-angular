@@ -17,7 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CharactersListComponent } from './characters/characters-list/characters-list.component';
 import { CharacterComponent } from './characters/character-card/character-card.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { ComicComponent } from './comics/comic/comic.component';
+import { ComicComponent } from './comics/comic-card/comic-card.component';
 import { ComicsListComponent } from './comics/comics-list/comics-list.component';
 import { SearchComponent } from './search/search.component';
 

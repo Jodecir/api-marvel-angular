@@ -2,7 +2,7 @@
   <app-search></app-search>
   <div fxLayout="row wrap">
     <div class="FlexCard" fxFlex="25" fxFlex.xs="100" fxFlex.md="25" fxFle.sm="50" *ngFor="let comic of allComics">
-        <app-comic [comic]="comic"></app-comic>
+        <app-comic-card [comic]="comic"></app-comic-card>
     </div>
   </div>
 </div>
