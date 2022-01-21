@@ -2,17 +2,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CharactersApiService {
-  WEBSITE = 'https://gateway.marvel.com:443/v1/public'
   SECTION = 'characters'
-  TS = "2021"
-  PUBLIC_KEY = '5a237863b3cc2061003cbbc4fe20dc06';
-  HASH = '04bc75e5de9e0c176cb73442c4ba0328';
-  URL_API = `${this.WEBSITE}/${this.SECTION}?ts=${this.TS}&apikey=${this.PUBLIC_KEY}&hash=${this.HASH}`;
+  URL_API = `${environment.apiUrl}/${this.SECTION}?ts=${environment.timestamp}&apikey=${environment.apiPubKey}&hash=${environment.apiHashedKey}`;
 
   constructor(private http: HttpClient) { }
 
@@ -22,11 +19,11 @@ export class CharactersApiService {
   }
 
   getCharacterDetail(id: string): Observable<any> {
-    return this.http.get<any>(`${this.WEBSITE}/${this.SECTION}/${id}?ts=${this.TS}&apikey=${this.PUBLIC_KEY}&hash=${this.HASH}`);
+    return this.http.get<any>(`${environment.apiUrl}/${this.SECTION}/${id}?ts=${environment.timestamp}&apikey=${environment.apiPubKey}&hash=${environment.apiHashedKey}`);
   }
 
   getCharacterComics(id: string): Observable<any> {
-    return this.http.get<any>(`${this.WEBSITE}/${this.SECTION}/${id}/comics?ts=${this.TS}&apikey=${this.PUBLIC_KEY}&hash=${this.HASH}`);
+    return this.http.get<any>(`${environment.apiUrl}/${this.SECTION}/${id}/comics?ts=${environment.timestamp}&apikey=${environment.apiPubKey}&hash=${environment.apiHashedKey}`);
   }
 
   searchCharacters(name: string) {
